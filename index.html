@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Tela de cadastro</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- NAVBAR-->
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+            </div>
+        </div>
+        <nav class="navbar navbar-dark">
+            <span class="navbar-toggler-icon"></span>
+            <!-- Botão da NAVBAR-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Alterna navegação">
+                <img src="img.png" alt="Bootstrap" width="60" height="40"> <!-- Imagem dentro da navbar-->
+            </button>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <!-- FORMULÁRIO-->
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+
+        }
+    </style>
+    <form action="/pagina-processa-dados-do-form" method="post">
+        <center>
+            <font face="Poppins">
+                <h2><b>Cadastrar usuário</b></h2>
+            </font>
+        </center>
+        <br>
+        <!-- DROPDOWN MENU -->
+        <!-- Default dropleft button -->
+        <select class="text-black">
+            <option class="text-black" selected disabled>Selecione</option>
+            <option class="text-black">Usuário</option>
+            <option class="text-black">Operador</option>
+            <option class="text-black">Gestor</option>
+        </select>
+
+        <br>
+        <div class="form-group row">
+            <label for="inputMatricula3" class="col-sm-2 col-form-label">Matricula:</label>
+            <div class="col-sm-10">
+                <input type="matricula" class="form-control" id="inputMatricula3" placeholder="">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputNome3" class="col-sm-2 col-form-label">Nome:</label>
+            <div class="col-sm-10">
+                <input type="nome" class="form-control" id="inputNome3" placeholder="">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputCPF3" class="col-sm-2 col-form-label">CPF:</label>
+            <div class="col-sm-10">
+                <input type="cpf" class="form-control" id="inputCpf3" placeholder="">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputRg3" class="col-sm-2 col-form-label">RG:</label>
+            <div class="col-sm-10">
+                <input type="rg" class="form-control" id="inputRg3" placeholder="">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputTelefone3" class="col-sm-2 col-form-label">Telefone:</label>
+            <div class="col-sm-10">
+                <input type="telefone" class="form-control" id="inputTelefone3" placeholder="">
+            </div>
+        </div>
+
+        <div class="button">
+            <fonte="Poppins"><button type="button" class="btn btn-botao">Cadastrar</button></fonte>
+        </div>
+
+        </div>
+        </div>
+        <form>
+        </form>
+    </form>
+</body>
+
+</html>
