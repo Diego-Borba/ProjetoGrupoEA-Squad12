@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autors" content="Flávio Henrique and Fernando Filipe">
+    <link href="../ProjetoGrupoEA-Squad12/css/style.css" rel="stylesheet" type="text/css">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    
+    <title>Help Desk Grupo EA</title>
+    
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+            google.charts.load('current', {'packages':['table']});
+            google.charts.setOnLoadCallback(drawTable);
+      
+            function drawTable() {
+              var data = new google.visualization.DataTable();
+              data.addColumn('string', 'Tipo de chamados');
+              data.addColumn('number', 'SLA');
+              data.addColumn('string', 'Estado do Chamado');
+              data.addRows([
+                ['Navegador não consegue enviar emails',  {v: 10, f: '10'},'Resolvido'],
+                ['Sem sinal de Internet',   {v:8,   f: '8'}, 'Resolvido'],
+                ['Computador não liga', {v: 7, f: '7'}, 'Resolvido'],
+                ['Sistema apresentando erro',   {v: 6,  f: '6'},  'Não Resolvido']
+              ]);
+      
+              var table = new google.visualization.Table(document.getElementById('table_div'));
+      
+              table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+            }
+          </script>
+</head>
+<body>
+
+
+    
+    
+    <header>
+            <nav class="navbar navbar-expand-lg" style=" background: rgb(0, 49, 88);">
+                <a class="navbar-brand mx-5"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end menu" id="navbarNavAltMarkup">
+                        <ul>
+                            <li><a class="nav-item nav-link active text-white" aria-current="page" href="">Home</a> </li>
+                            <li><a class="nav-item nav-link text-white" href="">Meus Chamados</a> </li>
+                            <li><a class="nav-item nav-link text-white" href="../ProjetoGrupoEA-Squad12/pages/login.php">Encerrar sessão</a> </li>
+                        </ul>
+                  </div>
+            </nav>
+    </header>
+   
+        
+        <div class="col-12 col-sm-10 col-md-7 col-lg-5 col-xl-4 col-xxl-1 "><h1>Chamados</h1></div>
+          <div id="table_div"></div>
+         
+        </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</html>
+      
