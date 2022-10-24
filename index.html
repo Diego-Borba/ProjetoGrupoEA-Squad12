@@ -7,9 +7,22 @@
     <meta name="autors" content="Diego Borba">
     <link href="../ProjetoGrupoEA-Squad12/css/style.css" rel="stylesheet" type="text/css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $('#tabela_chamados').DataTable();
+    });
+    </script>
+
+
+
     <title>Help Desk Grupo EA</title>
     
 </head>
@@ -17,23 +30,109 @@
     <header>
             <nav class="navbar navbar-expand-lg" style=" background: rgb(0, 49, 88);">
                 <a class="navbar-brand mx-5"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end menu" id="navbarNavAltMarkup">
-                        <ul>
-                            <li><a class="nav-item nav-link active text-white" aria-current="page" href="">Home</a> </li>
-                            <li><a class="nav-item nav-link text-white" href="">Meus Chamados</a> </li>
-                            <li><a class="nav-item nav-link text-white" href="../ProjetoGrupoEA-Squad12/pages/login.php">Encerrar sessão</a> </li>
-                        </ul>
-                  </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end menu" id="navbarNavAltMarkup">
+                    <ul>
+                        <li><a class="nav-item nav-link active text-white" aria-current="page" href="">Home</a> </li>
+                        <li><a class="nav-item nav-link text-white" href="">Meus Chamados</a> </li>
+                        <li><a class="nav-item nav-link text-white" href="">Encerrar sessão</a> </li>
+                    </ul>
+                </div>
             </nav>
     </header>
-    
+            <div class="btnAbre"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </div>
+            <aside class="offcanvas offcanvas-start show text-bg-dark" tabindex="-1" id="offcanvasDark"
+                aria-labelledby="offcanvasDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul>
+                        <li><a href="#">Verificar chamados</a></li>
+                        <li><a href="#">Consultar relatórios</a></li>
+                        <li><a href="#">Cadastrar usuário</a></li>
+                    </ul>
+                </div>
+            </aside>
+<main>
+    <h1>Chamados</h1>
+    <div>
+        <table id="tabela_chamados" class="table table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>ID CHAMADO</th>
+                    <th>DESCRIÇÃO</th>
+                    <th>SITUAÇÃO</th>
+                    <th>SLA</th>
+                    <th>SETOR</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Teclado com Problema</td>
+                    <td>Aberto</td>
+                    <td>Baixo</td>
+                    <td>Admnistrativo</td>
+                    
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Computador sem conexão à internet</td>
+                    <td>Aberto</td>
+                    <td>Alto</td>
+                    <td>Admnistrativo</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Sem permissão para acessar E-mail</td>
+                    <td>Concluído</td>
+                    <td>Crítico</td>
+                    <td>Financeiro</td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Data-show com problema</td>
+                    <td>Em Andamento</td>
+                    <td>Alto</td>
+                    <td>RH</td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Computador não liga</td>
+                    <td>Concluído</td>
+                    <td>Médio</td>
+                    <td>Admnistrativo</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>ID CHAMADO</th>
+                    <th>DESCRIÇÃO</th>
+                    <th>SITUAÇÃO</th>
+                    <th>SLA</th>
+                    <th>SETOR</th>
+                </tr>
+            </tfoot>
         
         
-         
+        </table>
+    </div>      
+            
+</main>
+<script type="text/javascript" src="./js/script.js"></script>
+
 </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </html>
       
