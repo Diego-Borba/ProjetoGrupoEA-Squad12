@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="autors" content="Diego Borba">
-    <link href="../ProjetoGrupoEA-Squad12/css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -26,6 +26,43 @@
             responsive:true
         } );
     </script>
+
+     <!--Carrega o Ajax-->
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+     <script type="text/javascript">
+ 
+       
+       google.charts.load('current', {'packages':['corechart']});
+ 
+       google.charts.setOnLoadCallback(drawChart);
+ 
+       
+       function drawChart() {
+ 
+         // Cria o Gráfico.
+         var data = new google.visualization.DataTable();
+         data.addColumn('string', 'Topping');
+         data.addColumn('number', 'Slices');
+         data.addRows([
+           ['Comercial', 3],
+           ['Administrativo', 4],
+           ['RH', 2],
+           ['Financeiro', 2],
+           ['Tecnologia', 1]
+         ]);
+ 
+         
+         var options = {
+                    'legend':'left',
+                    'title':'Chamados por Setores',
+                    'is3D':true,
+                    'width':400,
+                    'height':300
+                };
+         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+         chart.draw(data, options);
+       }
+     </script>
 
 
 
@@ -133,7 +170,9 @@
         
         
         </table>
-    </div>      
+    </div> 
+    <hr>
+    <div id="chart_div"></div>
             
 </main>
 <script type="text/javascript" src="./js/script.js"></script>
