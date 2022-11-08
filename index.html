@@ -13,58 +13,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
-    <script>-
+    
+    <script  type="text/javascript">
         $(document).ready(function() {
-             $('#tabela_chamados').DataTable( {
+            $('#tabela_chamados').DataTable( {
                 "language": {
-                    "url": "//cdn.datatables.net/plug-ins/1.12.1/i18n/pt-BR.json",
+                    "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Portuguese-Brasil.json"
                 }
-                
             } );
-           responsive:true
         } );
     </script>
-    
-
-     <!--Carrega o Ajax-->
-     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-     <script type="text/javascript">
- 
-       
-       google.charts.load('current', {'packages':['corechart']});
- 
-       google.charts.setOnLoadCallback(drawChart);
- 
-       
-       function drawChart() {
- 
-         // Cria o Gráfico.
-         var data = new google.visualization.DataTable();
-         data.addColumn('string', 'Topping');
-         data.addColumn('number', 'Slices');
-         data.addRows([
-           ['Comercial', 3],
-           ['Administrativo', 4],
-           ['RH', 2],
-           ['Financeiro', 2],
-           ['Tecnologia', 1]
-         ]);
- 
-         
-         var options = {
-                    'legend':'left',
-                    'title':'Chamados por Setores',
-                    'is3D':true,
-                    'width':400,
-                    'height':300
-                };
-         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-         chart.draw(data, options);
-       }
-     </script>
-
 
 
     <title>Help Desk Grupo EA</title>
