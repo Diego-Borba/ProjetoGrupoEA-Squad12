@@ -18,10 +18,12 @@
 <body>
     <header>
             <nav class="navbar navbar-expand-lg" style=" background: rgb(0, 49, 88);">
-                <a class="navbar-brand mx-5"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand mx-5">
+                    <button class="buttonIcon"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <i id="icon" class="fa-solid fa-bars"></i>
                     </button>
+                </a>
+                    
                     <div class="collapse navbar-collapse justify-content-end menu" id="navbarNavAltMarkup">
                         <ul>
                             <li><a class="nav-item nav-link active text-white" aria-current="page" href="../index.html">Home</a> </li>
@@ -31,6 +33,25 @@
                   </div>
             </nav>
     </header>
+    
+    <div class="offcanvas offcanvas-start" style=" background: rgb(0, 49, 88);" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header ">
+            <h5 class="offcanvas-title text-white" id="offcanvasScrollingLabel">MENU</h5>
+            <button class="buttonIcon" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i id="icon" class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <hr class="h-color mx-2">
+        <div class="offcanvas-body">
+            <ul class=" list-unstyled px-2" style="list-style: none;">
+                <li class="menu-item nav-link text-white"> <i class="fa-solid fa-house"></i> Home</li>
+                <li class="menu-item nav-link text-white"> <i class="fa-regular fa-folder"></i> Meus Chamados</li>
+                <li class="menu-item nav-link text-white"> <i class="fa-solid fa-arrow-left"></i> Encerrar Sessão</li>
+            </ul>
+            <hr class="h-color mx-2">  
+        </div>
+        <hr class="h-color mx-2" > 
+    </div>
 
     <main>
         <div class="main-screen">
