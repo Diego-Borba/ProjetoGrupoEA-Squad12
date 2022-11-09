@@ -84,7 +84,13 @@ label {
 }
 
 .footer{
-    background-color: #ffa500;
+    background-color: 	#708090;
+}
+
+.icones-footer a{
+    color: #fff;
+    margin: 10px;
+    text-decoration: none
 }
 
 /* css login */
