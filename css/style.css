@@ -75,6 +75,18 @@ label {
 
 }
 
+.span-footer{
+    color: black;
+}
+
+.span-footer a{
+    color: #003158;
+}
+
+.footer{
+    background-color: #ffa500;
+}
+
 /* css login */
 
 
@@ -134,6 +146,7 @@ label {
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+   
 }
 
 body * {
@@ -497,12 +510,12 @@ main h1{
     font-family: 'Open Sans', sans-serif;
 }
 
-body {
+/*body {
     background-image: url("../img/fundo.jpg");
     background-repeat: no-repeat;
-}
+}*/
 
-form {
+.form-cadastrar-usuario{
     background-color: orange;
     border-radius: 2.5em;
     margin: 0 auto;
