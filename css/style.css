@@ -483,3 +483,193 @@ main h1{
 }
 
 /* offcanvas - sidebar */
+
+/*css cadastro_usuario*/
+* {
+    margin: 0;
+    /* margem */
+    border: 0;
+    /* borda */
+    padding: 0;
+    /* distância entre elemento e a borda */
+    box-sizing: border-box;
+    /* relação width e height*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url("../img/fundo.jpg");
+    background-repeat: no-repeat;
+}
+
+form {
+    background-color: orange;
+    border-radius: 2.5em;
+    margin: 0 auto;
+    width: 27%;
+    height: 25%;
+    padding: 1em;
+    margin-top: 8.5%;
+    border: 4px solid orange;
+    box-shadow: 0px 20px 20px #00000056;
+}
+
+label {
+    font-weight: bold;
+    font-size: 12px;
+    /* deixa em negrito*/
+}
+
+label, input {
+    margin-left: 5%;
+}
+
+/* Mudar cor da barra de navegação */
+nav {
+    background-color: #003158;
+    top: 0;
+    height: 8%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+}
+
+.buttonCadastro {
+    margin-left: 40%;
+    color: #003158;
+}
+
+.buttonClass {
+    font-size: 12px;
+    width: 120px;
+    height: 30px;
+    border-width: 1px;
+    color: #fff;
+    background: rgba(0, 49, 88, 1);
+    margin-left: 30%;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
+
+.buttonNav {
+    background-color: orange;
+    margin-top: 0.7%;
+    margin-left: 86%;
+    width: 85px;
+    height: 23px;
+    border-width: 1px;
+    border-radius: 1.5em;
+    position: absolute;
+    cursor: pointer;
+}
+
+.buttonNav2 {
+    background-color: orange;
+    margin-top: 0.7%;
+    margin-left: 77%;
+    width: 85px;
+    height: 23px;
+    border-width: 1px;
+    border-radius: 1.5em;
+    position: absolute;
+    cursor: pointer;
+}
+
+.buttonNav3 {
+    background-color: orange;
+    margin-top: 0.7%;
+    margin-left: 68%;
+    width: 85px;
+    height: 23px;
+    border-width: 1px;
+    border-radius: 1.5em;
+    position: absolute;
+    cursor: pointer;
+}
+
+.buttonNav4 {
+    margin-top: 0.6%;
+    margin-left: 95%;
+    position: absolute;
+    width: 25px;
+    cursor: pointer;
+}
+
+.buttonNav5 {
+    margin-top: 0.8%;
+    margin-left: 2%;
+    width: 22px;
+    cursor: pointer;
+}
+
+/* MUDA A COR DO PLACEHOLDER */
+input::placeholder {
+    padding: 12px;
+    color: #fff;
+    font-size: 11px;
+}
+
+.teste {
+    background-image: url(img/botao.png);
+}
+
+#formulario input {
+    font-size: 12px;
+    background-color: #003158;
+    border-color: white;
+    border-radius: 1.5em;
+    width: 70%;
+    height: 27px;
+}
+
+#formulario input.campo_matricula {
+    margin-left: 1.5%;
+}
+
+#formulario input.campo_nome {
+    margin-top: 1%;
+    margin-left: 8%;
+}
+
+#formulario input.campo_cpf {
+    margin-top: 1%;
+    margin-left: 11%;
+}
+
+#formulario input.campo_rg {
+    margin-top: 1%;
+    margin-left: 13%;
+}
+
+#formulario input.campo_email {
+    margin-top: 1%;
+    margin-left: 8.5%;
+}
+
+#formulario input.campo_telefone {
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+#formulario select.form_tipo {
+    color: white;
+    background-color: #003158;
+    font-size: 12px;
+    border-radius: 0.5em;
+    margin-left: 10.5%;
+    width: 70%;
+    height: 33px;
+    margin-top: 1%;
+    border-radius: 2.5em;
+}
+
+#formulario h2 {
+    color: black;
+    font-size: 15px;
+}
+
+#formulario img {
+    margin-left: 38%;
+}
