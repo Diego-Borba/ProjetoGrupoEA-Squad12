@@ -706,13 +706,14 @@ input::placeholder {
 #formulario img {
     margin-left: 38%;
 }
+.btn-warning{
+    background-color: orange;
+    border-radius: 25px;
+}
+.btn-usuario{
+    color:#003158;
 
-.login-icon{
-    color: white;
+    padding: 0 15px;
 
 }
-.span-usuario{
-
-    font-size: 17px;
-
-}
+    
