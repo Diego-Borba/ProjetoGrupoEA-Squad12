@@ -706,3 +706,13 @@ input::placeholder {
 #formulario img {
     margin-left: 38%;
 }
+
+.login-icon{
+    color: white;
+
+}
+.span-usuario{
+
+    font-size: 17px;
+
+}
