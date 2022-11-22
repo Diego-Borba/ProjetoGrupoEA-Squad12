@@ -314,11 +314,24 @@ body * {
         height: auto;
         width: 90%;
     }
-
+    
+     .footer{
+        margin-top: 180px;
+    }
+    
+    
     @media only screen and (max-width: 380px) {
 
         .left-screen img {
             margin-top: 50vh;
+        }
+        
+        .footer{
+            margin-top: 250px;
+        }
+
+        .offcanvas{
+            width: 250px !important;
         }
     }
 
