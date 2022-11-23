@@ -18,6 +18,9 @@
     height: 100% !important;
     ;
 }
+#Entrar{
+    text-decoration: none;
+}
 
 .card {
     background-color: orange;
@@ -209,12 +212,11 @@ body * {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 30px 35px;
+    padding: 15px 25px;
     width: 60%;
     margin-top: 100px;
     margin-bottom: 100px;
 }
-
 .textfield select {
     background: rgb(25, 92, 145);
     border: none;
@@ -302,7 +304,7 @@ body * {
     }
 
     .left-screen img {
-        margin-top: 35vh;
+        margin-top: vh;
     }
 
     .right-screen {

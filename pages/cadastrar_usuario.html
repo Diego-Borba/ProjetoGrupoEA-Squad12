@@ -92,10 +92,10 @@
                         <li class="menu-item nav-link text-white"> <i class="fa-regular fa-folder"></i> Meus Chamados
                         </li>
                     </a>
-                    <a href="./login.html">
+                    <!--<a href="./login.html">
                         <li class="menu-item nav-link text-white"> <i class="fa-solid fa-arrow-left"></i> Encerrar
                             Sessão</li>
-                    </a>
+                    </a>-->
                 </div>
             </ul>
             <hr class="h-color">
@@ -103,17 +103,17 @@
         <hr class="h-color mx-2">
     </div>
 
-    <section class="container section-cadastrar">     
+    <section class="container section-cadastrar">
         <form class="container justify-content-center d-flex">
             <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 card-cadastrar ">
-                <div class="d-flex justify-content-center align-items-center img-cadastrar-usuario"> 
-                    
-                    <img
-                        src="../img/logo.png" width="85px"></div>
+                <div class="d-flex justify-content-center align-items-center img-cadastrar-usuario">
+
+                    <img src="../img/logo.png" width="85px">
+                </div>
 
                 <div class="form-group">
                     <label for="inputEmail">E-mail</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    <input required type="email" class="form-control" id="inputEmail" placeholder="Email">
                 </div>
                 <div class="form-group">
                     <label for="inputMatricula">Matrícula</label>
@@ -133,94 +133,42 @@
                 </div>
                 <div class="form-group">
                     <label for="inputTelefone">Telefone</label>
-                    <input type="text" style="color: white;" class="form-control"  id="inputTelefone" placeholder="Telefone">
+                    <input type="text" class="form-control" id="inputTelefone"
+                        placeholder="Telefone">
                 </div>
                 <br>
-                
+
                 <div class="input-group mb-3">
                     <select class="form-select" id="inputSelecione">
-                      <option selected>Selecione</option>
-                      <option value="1">SU</option>
-                      <option value="2">Usuário</option>
-                      <option value="3">Operador</option>
-                      <option value="4">Gestor</option>
+                        <option selected>Selecione</option>
+                        <option value="1">SU</option>
+                        <option value="2">Usuário</option>
+                        <option value="3">Operador</option>
+                        <option value="4">Gestor</option>
                     </select>
-                    
-                  </div>
-                  <button type="submit" class="buttonClass">Cadastrar</button>
+
+                </div>
+                <button type="submit" class="buttonClass">Cadastrar</button>
                 <br>
             </div>
-        </form>  
+        </form>
     </section>
 
-
-
-
-
-
-
-
-    <!-- Formulário -->
-    <!-- <div class="container">
-    <div class= "container-fluid col-12 col-sm-10 col-md-7 col-lg-5 col-xl-4 col-xxl-1 justify-content-center">
-    <form class="" id="formulario" action="/pagina-processa-dados-do-form" method="post">
-        <div class="justify-content-center d-flex align-items-center">
-            <div class="card-cadastrar"> -->
-
-    <!-- <img src="../img/logo.png" alt="Bootstrap" width="85" height="60"> <!-- Imagem dentro da navbar-->
-
-    <!-- <br> -->
-
-    <!-- Inputs do formulário -->
-    <!-- <label>Matrícula:</label>
-                <input class="campo_matricula" type="text" placeholder="Matrícula"><br>
-                <label>Nome:</label>
-                <input class="campo_nome" type="text" placeholder="Nome"><br>
-                <label>CPF:</label>
-                <input class="campo_cpf" type="text" placeholder="CPF"><br>
-                <label>RG:</label>
-                <input class="campo_rg" type="text" placeholder="RG"><br>
-                <label>Email:</label>
-                <input class="campo_email" type="text" placeholder="Email"><br>
-                <label>Telefone:</label>
-                <input class="campo_telefone" type="text" placeholder="Telefone"><br>
-
-                Dropdown MENU
-                <label>Tipo:</label>
-                <select class="form_tipo" required>
-                    <option value="">Selecione...</option>
-                    <option value="su">SU</option>
-                    <option value="usuario">Usuário</option>
-                    <option value="operador">Operador</option>
-                    <option value="gestor">Gestor</option>
-                </select>
-                <br><br> -->
-
-    <!-- Botão cadastro-->
-    <!-- <button type="submit" class="buttonClass">Cadastrar</button>
-            </div>
-        </div>
-    
-    </form>
-</div>
-</div> -->
-
-
-<footer class="footer-cadastro blog-footer">
-    <div class="text-center" class="col-12 col-sm-10 col-md-7 col-lg-5 col-xl-4 col-xxl-1">
-        <span class="span-footer">
-            Copyright Eduardo Albuquerque Advogados Associados © 2022 Versão : J.2.10.22.N &nbsp; &nbsp;
-            <div class="icones-footer">
-                <a href="http://www.grupoea.net.br/"> <img src="../img/logo.png" width="25px"> </a>
-                <a href="https://www.instagram.com/grupoeduardoalbuquerque/"><i class="bi bi-instagram"> </i></a>
-                <a href="https://www.linkedin.com/company/grupo-eduardo-albuquerque/"><i
-                    class="bi bi-linkedin"></i></a>
+    <footer class="footer-cadastro blog-footer">
+        <div class="text-center" class="col-12 col-sm-10 col-md-7 col-lg-5 col-xl-4 col-xxl-1">
+            <span class="span-footer">
+                Copyright Eduardo Albuquerque Advogados Associados © 2022 Versão : J.2.10.22.N &nbsp; &nbsp;
+                <div class="icones-footer">
+                    <a href="http://www.grupoea.net.br/"> <img src="../img/logo.png" width="25px"> </a>
+                    <a href="https://www.instagram.com/grupoeduardoalbuquerque/"><i class="bi bi-instagram"> </i></a>
+                    <a href="https://www.linkedin.com/company/grupo-eduardo-albuquerque/"><i
+                            class="bi bi-linkedin"></i></a>
                     <a href="https://www.facebook.com/GrupoEduardoAlbuquerque/"><i class="bi bi-facebook"></i></a>
                 </div>
             </span>
         </div>
     </footer>
-    
+
     <script type="text/javascript" src="../js/script.js"></script>
 </body>
 

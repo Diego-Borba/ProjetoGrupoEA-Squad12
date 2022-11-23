@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="autors" content="Flávio Henrique">
-
+    
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
     <link href="../css/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -19,7 +20,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-    <title>Document</title>
+    <title>Meus Chamados</title>
 </head>
 
 <body>
@@ -82,10 +83,10 @@
                         <li class="menu-item nav-link text-white"> <i class="fa-regular fa-folder"></i> Meus Chamados
                         </li>
                     </a>
-                    <a href="./login.html">
+                    <!--<a href="./login.html">
                         <li class="menu-item nav-link text-white"> <i class="fa-solid fa-arrow-left"></i> Encerrar
                             Sessão</li>
-                    </a>
+                    </a>-->
                 </div>
             </ul>
             <hr class="h-color">
@@ -102,13 +103,14 @@
                 </div>
             </div>
             <div class="container-fluid table-responsive">
+                
                 <table id="example" class="table table-bordered border-dark table-hover" id="table-resp"
                     style="width:100%">
                     <thead class="tableHeader">
                         <tr>
                             <th class="text-white">ID</th>
                             <th class="text-white">Tipo de Chamado</th>
-                            <th class="text-white">Solicitante</th>
+                            <!-- <th class="text-white">Solicitante</th> -->
                             <th class="text-white">Data e hora de Abertura</th>
                             <th class="text-white">Descrição</th>
                         </tr>
@@ -117,22 +119,57 @@
                         <tr>
                             <td>65489</td>
                             <td>Geral</td>
-                            <td>1221</td>
+                            <!-- <td>1221</td> -->
                             <td>2022-09-30</td>
                             <td>Lâmpada com mau funcionamento</td>
                         </tr>
                         <tr>
-                            <td>65489</td>
+                            <td>65495</td>
                             <td>Equipamentos</td>
-                            <td>8594</td>
-                            <td>2022-10-14</td>
+                            <!-- <td>8594</td> -->
+                            <td>2022-10-08</td>
                             <td>Teclado quebrado</td>
                         </tr>
                         <tr>
-                            <td>65489</td>
+                            <td>65497</td>
                             <td>Sistema</td>
-                            <td>5347</td>
-                            <td>2022-10-08</td>
+                            <!-- <td>5347</td> -->
+                            <td>2022-10-14</td>
+                            <td>Sistema não está funcionando corretamente!</td>
+                        </tr>
+                        <tr>
+                            <td>65500</td>
+                            <td>Equipamentos</td>
+                            <!-- <td>5347</td> -->
+                            <td>2022-11-05</td>
+                            <td>Mouse com problema</td>
+                        </tr>
+                        <tr>
+                            <td>65554</td>
+                            <td>Equipamentos</td>
+                            <!-- <td>5347</td> -->
+                            <td>2022-11-08</td>
+                            <td>Datashow apresentando defeito</td>
+                        </tr>
+                        <tr>
+                            <td>65601</td>
+                            <td>Sistema</td>
+                            <!-- <td>5347</td> -->
+                            <td>2022-11-14</td>
+                            <td>Esqueci minha senha</td>
+                        </tr>
+                        <tr>
+                            <td>65691</td>
+                            <td>Geral</td>
+                            <!-- <td>5347</td> -->
+                            <td>2022-10-19</td>
+                            <td>Internet não funciona</td>
+                        </tr>
+                        <tr>
+                            <td>65723</td>
+                            <td>Sistema</td>
+                            <!-- <td>5347</td> -->
+                            <td>2022-10-21</td>
                             <td>Sistema não está funcionando corretamente!</td>
                         </tr>
                     </tbody>
