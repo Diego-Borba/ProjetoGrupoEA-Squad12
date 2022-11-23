@@ -196,7 +196,9 @@ body * {
 
 .img-ea {
     image-resolution: 100%;
-    margin-top: 50px;
+    margin-top: 100px;
+    width: 150px;
+    height: 100px;
 }
 
 .card-chamados {
@@ -209,6 +211,8 @@ body * {
     justify-content: center;
     padding: 30px 35px;
     width: 60%;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .textfield select {
@@ -249,6 +253,9 @@ body * {
     text-align: center;
     text-decoration: none;
     padding: 10px 20px 10px 20px;
+}
+.button a{
+    text-decoration: none;
 }
 
 .button:hover {
@@ -364,8 +371,6 @@ body * {
     padding-right: 20px;
     font-weight:lighter;
 }
-
-
 
 .btn-primary:hover {
     background-color: #012a4b;
@@ -669,6 +674,20 @@ input::placeholder {
     width: 70%;
     height: 27px;
 }
+#inputEmail,#inputMatricula,#inputNome,#inputCpf,#inputRg,#inputTelefone,#inputSelecione,#placeholder {
+    background-color: #003158;
+    color: #ffffff;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.color{
+    color: white;
+    
+}
+    
+
 
 #formulario input.campo_matricula {
     margin-left: 1.5%;

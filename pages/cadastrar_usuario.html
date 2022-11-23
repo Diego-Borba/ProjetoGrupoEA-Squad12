@@ -34,18 +34,29 @@
 <body>
     <!-- NAVBAR-->
     <header>
-        <nav class="navbar navbar-expand-lg" style=" background: rgb(0, 49, 88);">
+        <nav class="navbar navbar-expand-lg justify-content-between" style=" background: rgb(0, 49, 88);">
             <a class="navbar-brand mx-5">
                 <button class="buttonIcon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
                     aria-controls="offcanvasScrolling">
                     <i id="icon" class="fa-solid fa-bars"></i>
                 </button>
             </a>
-            <!-- <div class="collapse navbar-collapse justify-content-end menu" id="navbarNavAltMarkup">
-                <ul>
-                    <li><a class="nav-item nav-link text-white" href=""> </li>
-                </ul>
-            </div> -->
+            <div class="justify-content-end">
+                <div class="d-flex justify-content-between">
+                    <div class="btn">
+                        <button class="btn-warning dropdown-toggle btn-usuario" id="bd-versions"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                            <span class="" style="font-size: 25px;"> <i class="bi bi-person-circle"></i></span>
+                            Demo
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu" aria-labelledby="bd-versions">
+                            <li><a class="dropdown-item" href="../pages/cadastrar_usuario.html">Editar Perfil</a></li>
+                            <li><a class="dropdown-item" href="../pages/login.html">Encerrar Sessão</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -95,7 +106,9 @@
     <section class="container section-cadastrar">     
         <form class="container justify-content-center d-flex">
             <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 card-cadastrar ">
-                <div class="d-flex justify-content-center align-items-center img-cadastrar-usuario"> <img
+                <div class="d-flex justify-content-center align-items-center img-cadastrar-usuario"> 
+                    
+                    <img
                         src="../img/logo.png" width="85px"></div>
 
                 <div class="form-group">
@@ -120,22 +133,22 @@
                 </div>
                 <div class="form-group">
                     <label for="inputTelefone">Telefone</label>
-                    <input type="text" class="form-control" id="inputTelefone" placeholder="Telefone">
+                    <input type="text" style="color: white;" class="form-control"  id="inputTelefone" placeholder="Telefone">
                 </div>
                 <br>
-                <div class="dropdown justify-content-center d-flex">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Selecione
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">SU</a>
-                        <a class="dropdown-item" href="#">Usuário</a>
-                        <a class="dropdown-item" href="#">Operador</a>
-                        <a class="dropdown-item" href="#">Gestor</a>
-                    </div>
-                </div>
-
+                
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputSelecione">
+                      <option selected>Selecione</option>
+                      <option value="1">SU</option>
+                      <option value="2">Usuário</option>
+                      <option value="3">Operador</option>
+                      <option value="4">Gestor</option>
+                    </select>
+                    
+                  </div>
+                  <button type="submit" class="buttonClass">Cadastrar</button>
+                <br>
             </div>
         </form>  
     </section>
@@ -202,7 +215,7 @@
                 <a href="https://www.instagram.com/grupoeduardoalbuquerque/"><i class="bi bi-instagram"> </i></a>
                 <a href="https://www.linkedin.com/company/grupo-eduardo-albuquerque/"><i
                     class="bi bi-linkedin"></i></a>
-                    <a href="https://www.instagram.com/grupoeduardoalbuquerque/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.facebook.com/GrupoEduardoAlbuquerque/"><i class="bi bi-facebook"></i></a>
                 </div>
             </span>
         </div>

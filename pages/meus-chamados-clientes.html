@@ -24,18 +24,29 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg" style=" background: rgb(0, 49, 88);">
+        <nav class="navbar navbar-expand-lg justify-content-between" style=" background: rgb(0, 49, 88);">
             <a class="navbar-brand mx-5">
                 <button class="buttonIcon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
                     aria-controls="offcanvasScrolling">
                     <i id="icon" class="fa-solid fa-bars"></i>
                 </button>
             </a>
-            <!-- <div class="collapse navbar-collapse justify-content-end menu" id="navbarNavAltMarkup">
-                <ul>
-                    <li><a class="nav-item nav-link text-white" href=""> </li>
-                </ul>
-            </div> -->
+            <div class="justify-content-end">
+                <div class="d-flex justify-content-between">
+                    <div class="btn">
+                        <button class="btn-warning dropdown-toggle btn-usuario" id="bd-versions"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                            <span class="" style="font-size: 25px;"> <i class="bi bi-person-circle"></i></span>
+                            Demo
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu" aria-labelledby="bd-versions">
+                            <li><a class="dropdown-item" href="../pages/cadastrar_usuario.html">Editar Perfil</a></li>
+                            <li><a class="dropdown-item" href="../pages/login.html">Encerrar Sessão</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -147,7 +158,7 @@
                     <a href="https://www.instagram.com/grupoeduardoalbuquerque/"><i class="bi bi-instagram"> </i></a>
                     <a href="https://www.linkedin.com/company/grupo-eduardo-albuquerque/"><i
                             class="bi bi-linkedin"></i></a>
-                    <a href="https://www.instagram.com/grupoeduardoalbuquerque/"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.facebook.com/GrupoEduardoAlbuquerque/"><i class="bi bi-facebook"></i></a>
                 </div>
             </span>
         </div>
