@@ -665,7 +665,7 @@ input::placeholder {
 }
 
 .teste {
-    background-image: url(img/botao.png);
+    background-image: url(../img/botao.png);
 }
 
 #formulario input {
