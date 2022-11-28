@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autors" content="Diego Borba">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/b4d856d404.js" crossorigin="anonymous"></script>
+
+    <title>Help Desk Grupo EA</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg justify-content-between" style=" background: rgb(0, 49, 88);">
+            <a class="navbar-brand mx-5">
+                <button class="buttonIcon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                    aria-controls="offcanvasScrolling">
+                    <i id="icon" class="fa-solid fa-bars"></i>
+                </button>
+            </a>
+            <div class="justify-content-end">
+                <div class="d-flex justify-content-between">
+                    <div class="btn">
+                        <button class="btn-warning dropdown-toggle btn-usuario" id="bd-versions"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                            <span class="" style="font-size: 25px;"> <i class="bi bi-person-circle"></i></span>
+                            Demo
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu" aria-labelledby="bd-versions">
+                            <li><a class="dropdown-item" href="../pages/cadastrar_usuario.html">Editar Perfil</a></li>
+                            <li><a class="dropdown-item" href="../index.html" >Encerrar Sessão</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="offcanvas offcanvas-start" style=" background: rgb(0, 49, 88);" data-bs-scroll="true"
+        data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header ">
+            <h5 class="offcanvas-title text-white" id="offcanvasScrollingLabel">MENU</h5>
+            <button class="buttonIcon" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i id="icon" class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <hr class="h-color mx-2">
+        <div class="offcanvas-body">
+            <ul class=" list-unstyled px-2" style="list-style: none;">
+                <div class="tira">
+                    <a href="../pages/chamados-supervisor.html">
+                        <li class="menu-item nav-link text-white"> <i class="fa-solid fa-house"></i> Home</li>
+                    </a>
+                    <a href="../pages/realizar_chamados.html">
+                        <li class="menu-item nav-link text-white"> <i class="fa-solid fa-clipboard-check"></i> Realizar
+                            Chamados</li>
+                    </a>
+                    <a href="../pages/chamados-supervisor.html">
+                        <li class="menu-item nav-link text-white"> <i class="fa-solid fa-chart-line"></i> Dashboards
+                        </li>
+                    </a>
+                    <a href="../pages/cadastrar_usuario.html">
+                        <li class="menu-item nav-link text-white"> <i class="fa-solid fa-id-card"></i> Cadastrar Usuário
+                        </li>
+                    </a>
+                    <a href="../pages/meus-chamados-clientes.html">
+                        <li class="menu-item nav-link text-white"> <i class="fa-regular fa-folder"></i> Meus Chamados
+                        </li>
+                    </a>
+                    <!-- <a href="./pages/login.html">
+                        <li class="menu-item nav-link text-white"> <i class="fa-solid fa-arrow-left"></i> Encerrar
+                            Sessão</li>
+                    </a>-->
+                </div>
+            </ul>
+            <hr class="h-color">
+        </div>
+        <hr class="h-color mx-2">
+    </div>
+
+    <main>
+
+        <div class="container-fluid table-responsive">
+            <div class="container justify-content-center d-flex">
+                <div class="col-12 ">
+                    <h1>Chamados</h1>
+                    <table id="tabela_chamados" class="table table-striped" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>ID CHAMADO</th>
+                                <th>DESCRIÇÃO</th>
+                                <th>SITUAÇÃO</th>
+                                <th>SLA</th>
+                                <th>SETOR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>Teclado com Problema</td>
+                                <td>Aberto</td>
+                                <td>Baixo</td>
+                                <td>Admnistrativo</td>
+
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>Computador apresentando erro</td>
+                                <td>Aberto</td>
+                                <td>Alto</td>
+                                <td>Admnistrativo</td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>Sem permissão para acessar E-mail</td>
+                                <td>Concluído</td>
+                                <td>Crítico</td>
+                                <td>Financeiro</td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>Data-show com problema</td>
+                                <td>Em Andamento</td>
+                                <td>Alto</td>
+                                <td>RH</td>
+                            </tr>
+                            <tr>
+                                <td>05</td>
+                                <td>Computador não liga</td>
+                                <td>Concluído</td>
+                                <td>Médio</td>
+                                <td>Admnistrativo</td>
+                            </tr>
+                            <tr>
+                                <td>06</td>
+                                <td>Internet não permite acessar alguns sites</td>
+                                <td>Aberto</td>
+                                <td>Baixo</td>
+                                <td>Admnistrativo</td>
+
+                            </tr>
+                            <tr>
+                                <td>07</td>
+                                <td>Computador sem conexão à internet</td>
+                                <td>Aberto</td>
+                                <td>Alto</td>
+                                <td>Admnistrativo</td>
+                            </tr>
+                            <tr>
+                                <td>08</td>
+                                <td>Esqueci minha senha</td>
+                                <td>Concluído</td>
+                                <td>Médio</td>
+                                <td>RH</td>
+                            </tr>
+                            <tr>
+                                <td>09</td>
+                                <td>Mouse Quebrado</td>
+                                <td>Em Andamento</td>
+                                <td>Médio</td>
+                                <td>RH</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Lampada com mau funcionamento</td>
+                                <td>Aberto</td>
+                                <td>Baixo</td>
+                                <td>Comercial</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Cadeira Quebrada</td>
+                                <td>Aberto</td>
+                                <td>Baixo</td>
+                                <td>Comercial</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Erro de Administrador</td>
+                                <td>Aberto</td>
+                                <td>Alto</td>
+                                <td>Admnistrativo</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Erro de Administrador</td>
+                                <td>Concluído</td>
+                                <td>Crítico</td>
+                                <td>Financeiro</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Porta USB não funciona</td>
+                                <td>Em Andamento</td>
+                                <td>Baixo</td>
+                                <td>RH</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Computador não liga</td>
+                                <td>Concluído</td>
+                                <td>Médio</td>
+                                <td>Admnistrativo</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>Planilha com problema</td>
+                                <td>Em Andamento</td>
+                                <td>Médio</td>
+                                <td>Admnistrativo</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>Impressora não conectada a rede</td>
+                                <td>Em Andamento</td>
+                                <td>Crítico</td>
+                                <td>Admnistrativo</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>Saida de som não funcionando</td>
+                                <td>Em Andamento</td>
+                                <td>Médio</td>
+                                <td>RH</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>Mudança de acomodação</td>
+                                <td>Concluído</td>
+                                <td>Baixo</td>
+                                <td>RH</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>Computador não liga</td>
+                                <td>Em Andamento</td>
+                                <td>Médio</td>
+                                <td>Comercial</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>Treinamento de sistema</td>
+                                <td>Em Andamento</td>
+                                <td>Médio</td>
+                                <td>Admnistrativo</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>Treinamento de sistema</td>
+                                <td>Em Andamento</td>
+                                <td>Médio</td>
+                                <td>Financeiro</td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>Treinamento de sistema</td>
+                                <td>Em Andamento</td>
+                                <td>Médio</td>
+                                <td>Comercial</td>
+                            </tr>
+                            <tr>
+                                <td>24</td>
+                                <td>Treinamento de sistema</td>
+                                <td>Em Andamento</td>
+                                <td>Médio</td>
+                                <td>RH</td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>Mouse Quebrado</td>
+                                <td>aberto</td>
+                                <td>Baixo</td>
+                                <td>RH</td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>Troca de acomodação</td>
+                                <td>Concluído</td>
+                                <td>Médio</td>
+                                <td>Admnistrativo</td>
+                            </tr>
+                            <tr>
+                                <td>27</td>
+                                <td>Duvida com sistema</td>
+                                <td>Em Andamento</td>
+                                <td>Médio</td>
+                                <td>Financeiro</td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>Impressora sem tinta</td>
+                                <td>Concluído</td>
+                                <td>Médio</td>
+                                <td>Comercial</td>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>Luz piscando</td>
+                                <td>Em Andamento</td>
+                                <td>Baixo</td>
+                                <td>Financeiro</td>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td>Dúvida no Sistema</td>
+                                <td>Concluído</td>
+                                <td>Médio</td>
+                                <td>Admnistrativo</td>
+                            </tr>
+                            
+
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>ID CHAMADO</th>
+                                <th>DESCRIÇÃO</th>
+                                <th>SITUAÇÃO</th>
+                                <th>SLA</th>
+                                <th>SETOR</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="text-center" class="col-12 col-sm-10 col-md-7 col-lg-5 col-xl-4 col-xxl-1">
+            <span class="span-footer">
+                Copyright Eduardo Albuquerque Advogados Associados © 2022 Versão : J.2.10.22.N &nbsp; &nbsp;
+                <div class="icones-footer">
+                    <a href="http://www.grupoea.net.br/"> <img src="./img/logo.png" width="25px"> </a>
+                    <a href="https://www.instagram.com/grupoeduardoalbuquerque/"><i class="bi bi-instagram"> </i></a>
+                    <a href="https://www.linkedin.com/company/grupo-eduardo-albuquerque/"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href="https://www.facebook.com/GrupoEduardoAlbuquerque/"><i class="bi bi-facebook"></i></a>
+                </div>
+            </span>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+</html>
