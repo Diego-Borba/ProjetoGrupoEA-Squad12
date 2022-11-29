@@ -1,5 +1,5 @@
 # Help Desk EA
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/RuGuedes/RiseUp_Porto/blob/main/licence) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/Diego-Borba/ProjetoGrupoEA-Squad12/blob/843f1a4e1e8482a8f1124188b7a41842013d912d/License) 
 
 # Sobre o projeto
 
