@@ -23,7 +23,7 @@ A aplicação consiste em um sistema com o objetivo de gerenciar, controlar, e a
 
 ## Implantação em produção
 - Front end web: 
-- Banco de dados: SqlServer
+- Banco de dados: MySql
 # Como executar o projeto
 
 Para a implantação do nosso código foi necessário primeiro a criação de um github com a adição das pastas necessárias para sua utilização. 
