@@ -22,7 +22,7 @@ A aplicação consiste em um sistema com o objetivo de gerenciar, controlar, e a
 - HTML / CSS / JS / Bootstrap
 
 ## Implantação em produção
-- Front end web: 
+- Front end web: GitHub Pages
 - Banco de dados: MySql
 # Como executar o projeto
 
@@ -38,7 +38,14 @@ git clone [https://github.com/Diego-Borba/ProjetoGrupoEA-Squad12]
 # acessar o projeto index.html
 ```
 # Autores
-
-
-
+André Baracho
+Aline Bandeira
+Debora Santana
+Diego Borba
+Fernando Silva
+Flavio Henrique
+Gabriela Diniz
+Mauricio Lourenço
+Raniele Gomes
+Ruan Guedes
 
