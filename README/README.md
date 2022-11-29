@@ -14,7 +14,7 @@ A aplicação consiste em um sistema com o objetivo de gerenciar, controlar, e a
 ![Mobyle 2]()
 
 ## Layout web
-![Web 1](https://github.com/RuGuedes/RiseUp_Porto/blob/main/teladeusuario.png)   ![Web 2](https://github.com/RuGuedes/RiseUp_Porto/blob/main/Chamados.png)
+![Web 1](https://github.com/Diego-Borba/ProjetoGrupoEA-Squad12/blob/784e0803468df5b796de67a80e11052fc8d13bdd/README/Imagens%20Readme/Chamados_supervisor.png)   ![Web 2](https://github.com/Diego-Borba/ProjetoGrupoEA-Squad12/blob/784e0803468df5b796de67a80e11052fc8d13bdd/README/Imagens%20Readme/Meus%20Chamados.png)
 
 # Tecnologias utilizadas
 ## Front end
