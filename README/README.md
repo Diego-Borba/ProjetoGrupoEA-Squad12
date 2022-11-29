@@ -10,8 +10,9 @@ Help Desk EA é uma aplicação front end web construída durante a 2ª edição
 A aplicação consiste em um sistema com o objetivo de gerenciar, controlar, e administrar os chamados. Um sistema responsivo que gere relatórios, auxilie os clientes com excelência em suas necessidades com base na abertura de chamados.
 
 ## Layout mobile
-![Mobyle 1]()
-![Mobyle 2]()
+![Mobyle 1](https://github.com/Diego-Borba/ProjetoGrupoEA-Squad12/blob/7cf825f1469ea7e3e50fc88102bd18b1f9b77919/README/Imagens%20Readme/tela_login_mobile.png)
+![Mobyle 2](https://github.com/Diego-Borba/ProjetoGrupoEA-Squad12/blob/7cf825f1469ea7e3e50fc88102bd18b1f9b77919/README/Imagens%20Readme/Cadastro_usuario_mobile.png)
+![Mobyle 3](https://github.com/Diego-Borba/ProjetoGrupoEA-Squad12/blob/7cf825f1469ea7e3e50fc88102bd18b1f9b77919/README/Imagens%20Readme/Realizar_chamados_mobile.png)
 
 ## Layout web
 ![Web 1](https://github.com/Diego-Borba/ProjetoGrupoEA-Squad12/blob/784e0803468df5b796de67a80e11052fc8d13bdd/README/Imagens%20Readme/Chamados_supervisor.png)   ![Web 2](https://github.com/Diego-Borba/ProjetoGrupoEA-Squad12/blob/784e0803468df5b796de67a80e11052fc8d13bdd/README/Imagens%20Readme/Meus%20Chamados.png)
