@@ -604,6 +604,12 @@ nav {
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
     border-bottom-right-radius: 28px;
+    
+}
+
+.buttonClass a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .buttonNav {
