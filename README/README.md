@@ -23,7 +23,7 @@ A aplicação consiste em um sistema com o objetivo de gerenciar, controlar, e a
 
 ## Implantação em produção
 - Front end web: GitHub Pages
-- Banco de dados: MySql
+- Banco de dados: SQLServer
 # Como executar o projeto
 
 Para a implantação do nosso código foi necessário primeiro a criação de um github com a adição das pastas necessárias para sua utilização. 
@@ -38,14 +38,14 @@ git clone [https://github.com/Diego-Borba/ProjetoGrupoEA-Squad12]
 # acessar o projeto index.html
 ```
 # Autores
-André Baracho
-Aline Bandeira
-Debora Santana
-Diego Borba
-Fernando Silva
-Flavio Henrique
-Gabriela Diniz
-Mauricio Lourenço
-Raniele Gomes
-Ruan Guedes
+- André Baracho
+- Aline Bandeira
+- Debora Santana
+- Diego Borba
+- Fernando Silva
+- Flavio Henrique
+- Gabriela Diniz
+- Mauricio Lourenço
+- Raniele Gomes
+- Ruan Guedes
 
